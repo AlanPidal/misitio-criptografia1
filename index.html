@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+  <title>Mi sitio web</title>
+  <style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #15091c;
+    }
+    a{
+        color:#f8a814;
+    }
+    h1 {
+        color: #f7f0f0;
+        text-align: center;
+        font-family: Monaco, monospace;
+    }
+    .banner{
+        background-color: #011f01;
+        color: #14f81b;
+        border: 4px solid #14f81b;
+        border-color: rgba(249, 255, 249, 1);
+        border-radius: 20px;
+        padding: 20px;
+        text-align: center;
+        font-size: 1.5em;
+        font-family: 'Courier New', Courier, monospace;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .banner-text{
+        display:inline-block;
+        padding-left: 100%;
+        animation: marquee 10s linear infinite;
+    }
+    @keyframes marquee {
+        0% {
+            transform: translate3d(0,0,0);
+        }
+        100% {
+            transform: translate3d(-100%,0,0);
+        }
+    }
+    @media (max-width: 600px) {
+        .banner {
+            font-size: 1em;
+            padding: 10px;
+        }
+    }
+    .container-subsection{
+        margin: 20px;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 20px;
+        background-color: rgba(249, 249, 249, 0.2);
+        font-family: Consolas, monospace;
+    }
+    .container-subsection h2{
+        color: #b6ee29;
+        font-size: 1.2em;
+        margin-bottom: 10px;
+    }
+    .container-subsection-text{
+        font-size: 1.0em;
+        margin-bottom: 10px;
+        color:#84ff00;
+        opacity: 1;
+        text-align: justify;
+    }
+    .correo, .mis-redes{
+        box-sizing: border-box;
+        width: calc(50% - 44px);
+        display: inline-block;
+        vertical-align: top;
+    }
+    @media (max-width: 600px) {
+        .correo, .mis-redes {
+            width: calc(100% - 40px);
+        }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Web personal</h1>
+  </header>
+  <main>
+    <div class ="banner">
+        <div class = "banner-text">Acerca de mí</div>
+    </div>
+    <div class = "container-subsection">
+        <div class = "container-subsection-text">
+            <h2>Formación académica:</h2>
+            <ul>
+                <li>Técnico en Computación</li>
+                <li>Ingeniería en Sistemas Computacionales (en curso)</li>
+            </ul>
+        </div>
+    </div>
+    <div class = "container-subsection correo">
+        <div class = "container-subsection-text">
+            <h2>Correo electrónico:</h2>
+            <ul>
+                <li>alanpidal7@gmail.com</li>
+            </ul>
+        </div>
+    </div>
+    <div class = "container-subsection mis-redes">
+        <div class = "container-subsection-text">
+            <h2>Mis redes:</h2>
+            <ul>
+                <li><a href = "https://github.com/AlanPidal">Github</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class = "container-subsection">
+        <div class = "container-subsection-text">
+            <h2>Hobbies:</h2>
+            <p>
+                Entre mis pasatiempos y áreas de interés están, ver videos de divulgación científica y tecnológica.
+                Por ejemplo, entre mis canales favoritos de YouTube se encuentran: QuantumFracture, Date un Vlog, El Robot de Platón, Nate Gentile, Facu Peralta, entre otros.
+                Disfruto de jugar videojuegos, aunque no me considero un gamer, pero disfruto principalmente de juegos casuales, incluso he probado a programar algunos videojuegos sencillos, aunque no he profundizado mucho en ello.
+                Entre mis proyectos actuales está un simulador del metro de la Ciudad de México, desarrollado en Godot, el cual ya cuenta con las primeras cuatro líneas de metro. Más adelante, se agrega el link al proyecto.
+                Actualmente, tengo otro desarrollo, un juego de plataformas en 2D, llamado TV Roudy, el cual de momento ha tomado algo de tiempo, al no emplear IA para hacerlo.
+                Asimismo, me gusta la programación y a veces la practico un poco prescindiendo de la IA, como en los viejos tiempos. 
+                Disfruto de escuchar música, y si bien no soy gran conocedor, entre mis grupos favoritos está Imagie Dragons, Fallout Boy, Coldplay, Queen, y una banda que recién descubrí llamada Calva Louise.
+                Asimismo tengo dos canales de YouTube donde subo contenido ocasionalmente, en uno de ellos subo gameplays de YouTube, en otro he subido tutorías de matemáticas.
+                También tengo interés en el idioma francés y japonés, así que he estado aprendiendo un poco de ambos idiomas.
+        </div>
+    </div>
+    <div class = "container-subsection">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/-2i4-GHh7vE" title="Video de YouTube" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="origin" allowfullscreen></iframe>
+        <img src="img/asobune_metro.png" alt="Metro CDMX Simulator por Asobune" width="560" height="315" caption="Mi videojuego "Metro CDMX Simulator" por Asobune (yo)" />
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/s-M1u2S7oRA?si=p8cZT5pbU_CvU4Fw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <img src="img/roudy.png" alt="TV Roudy" width="560" height="315" caption="Mi videojuego "TV Roudy" por Asobune (yo)" />
+    </div>
+     <div class = "container-subsection">
+        <div class = "container-subsection-text">
+            <h2>Acerca de criptografía:</h2>
+            <h3>Biografía de Elizebeth Smith Friedman</h3>
+
+            <p><strong>Elizebeth Smith Friedman (1892-1980)</strong> fue una criptóloga y criptoanalista estadounidense, reconocida por su trabajo en el descifrado de códigos secretos y su contribución a la seguridad nacional de Estados Unidos. Es considerada una de las mujeres pioneras en el campo de la criptología.</p>
+
+            <p>Nació el 26 de agosto de 1892 en Huntington, Indiana, Estados Unidos. Desde joven mostró interés por la literatura y los idiomas, por lo que estudió literatura inglesa en Hillsdale College. En 1916 comenzó a trabajar en Riverbank Laboratories, donde investigó mensajes ocultos y técnicas para descifrar códigos. Allí conoció a William Friedman, también criptólogo, con quien se casó en 1917.</p>
+
+            <p>Durante la <strong>Ley Seca en Estados Unidos (1920-1933)</strong>, Elizebeth colaboró con las autoridades para descifrar mensajes secretos utilizados por contrabandistas de alcohol. Gracias a sus habilidades, contribuyó a numerosas investigaciones contra redes criminales y ayudó a reunir pruebas para procesar a sus integrantes.</p>
+
+            <p>Durante la <strong>Segunda Guerra Mundial</strong>, participó en investigaciones de contraespionaje que ayudaron a descubrir redes de agentes nazis en América del Sur. Su trabajo fue muy importante para la seguridad estadounidense, aunque muchos de sus logros permanecieron clasificados durante años.</p>
+
+            <p>Elizebeth Smith Friedman falleció el 31 de octubre de 1980, a los 88 años, en Plainfield, Nueva Jersey. Con el tiempo, su contribución recibió un mayor reconocimiento y en 1999 fue incorporada al Salón de Honor Criptológico de la Agencia de Seguridad Nacional de Estados Unidos.</p>
+
+            <h2>Legado</h2>
+
+            <p>Elizebeth Smith Friedman fue una figura fundamental en el desarrollo de la criptología moderna. Su inteligencia, perseverancia y capacidad para descifrar mensajes secretos demostraron la importancia de la criptografía en la lucha contra el crimen y el espionaje, además de abrir camino para otras mujeres en el ámbito de la inteligencia y la seguridad nacional.</p>
+        </div>
+    </div>
+    <div class = "container-subsection">
+        <div class = "container-subsection-text">
+            <h2>Currículum vitae</h2>
+            <a href="docs/CURRÍCULUM VITAE - ALAN JIMENEZ FERNANDEZ PIDAL .pdf">Descargar Currículum Vitae</a>
+        </div>
+    </div>
+    <div class = "container-subsection">
+        <div class = "container-subsection-text">
+            <h2>Llave pública</h2>
+            <a>Link a mi llave pública</a>
+        </div>
+    </div>
+  </main>
+  <footer>
+  </footer>
+  <script>
+    // Código JavaScript del sitio
+  </script>
+</body>
+</html>
